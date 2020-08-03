@@ -55,7 +55,7 @@ li{
     font-style: normal;
     letter-spacing: 2px;
     color: #313b46;
-    z-index: 2;
+    z-index: 1;
 
 }
 .wrapper{
@@ -79,10 +79,17 @@ img:hover{
 }
 .show{
     size: 10px;
-    background-color: rgba(235, 49, 49, 0.774);
+    background-color: rgba(0,119,255);
     color: snow;
-    position: relative;
-    left: 5px;
+    position:static;
+    right: 10px;
+    top: 10px;
+    width: 55px;
+    height: 30px;
+    border: 2px solid rgb(0, 119, 255);
+    display: flex;
+    justify-content: center ;
+    
 }
 
 .header{
@@ -94,7 +101,7 @@ width: 100%;
     background-color: #3283ce;
     text-align: left;
     overflow:hidden;
-    z-index: 1;
+    z-index: 2;
 }
 .inputbox{
     position: relative;
@@ -112,4 +119,18 @@ h1{
     width: 100%;
     height: 45px;
     background-color: rgb(51, 192, 192);
+}
+
+.nextpage{
+    margin-left: 20px;
+     width: max-content;
+}
+.prevpage{
+    margin-left: 100px;
+    width: max-content;
+}
+.link{
+    text-decoration: none;
+    color: snow;
+    font-weight: 300;
 }
