@@ -5,7 +5,7 @@ import './Style.css';
  import UseModal from './UseModal';
 
 const Api = () => {
-    
+    const initialPage=1;
     const [data,setdata] = useState(null);
     const [search,setsearch] = useState('avengers');
     const [id,setid] = useState('avengers');
@@ -13,7 +13,8 @@ const Api = () => {
 
 
     const handleclick = ()  => {
-        setid(search)
+        setid(search);
+        setpage(initialPage);
     }
 
        
@@ -32,6 +33,17 @@ const Api = () => {
    },[id,page]);
    
    const {isShowing, toggle} = UseModal();
+     
+   const prevpage = (page) => { if(page===1){
+         return 1;
+        }
+         else if(page>1){
+             return page-1;
+         }
+     }
+
+     
+     
 
     return (
         <div>
@@ -41,7 +53,7 @@ const Api = () => {
            <div  className="inputbox">
            <input type="text" value={search} onChange={e => setsearch(e.target.value)}/>
             <button   type="submit" onClick={handleclick} >Search</button>
-            <button className="prevpage" onClick={()=>setpage(page - 1)}>Prev Page</button>
+            <button className="prevpage" onClick={()=>setpage(prevpage)}>Prev Page</button>
             <button className="nextpage" onClick={()=>setpage(page + 1)}>Next Page</button>
             
            </div>
@@ -58,6 +70,8 @@ const Api = () => {
       <Modal
         isShowing={isShowing}
         hide={toggle}
+        info={data[index]}
+        ids={id}
       />
                     
                       </li>
