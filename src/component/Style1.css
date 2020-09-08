@@ -28,8 +28,8 @@
     top: 55px;
     margin: 1.75rem auto;
     border-radius: 3px;
-    max-width: 740px;
-    height: 430px;
+    max-width: 400px;
+    height: 350px;
     padding: 2rem;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 65%);
    
@@ -66,6 +66,13 @@
   }
   
   .button-default {
-    background: #247BA0;
+   background: #ea7474f0;
     color: #fff;
+    width: 74px;
+    height: 35px;
+    margin: 0px 0px 16px 90px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 40px;
   }
