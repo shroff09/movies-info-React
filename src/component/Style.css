@@ -149,12 +149,18 @@ h2{
     letter-spacing: 15px
 }
 .notExist{
-    color:black;
-    margin:250px;
+    color: lightcoral;
+    margin: 250px;
     letter-spacing: 8px;
+    font-size: xxx-large;
+    font-family: cursive;
+
 }
 .searchEmpty{
-    color:black;
-    margin:200px;
-    letter-spacing: 8px;
+   color: salmon;
+    margin: 200px;
+    letter-spacing: 15px;
+    font-size: -webkit-xxx-large;
+    font-weight: 500;
+    font-family: cursive
 }

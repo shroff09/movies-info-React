@@ -1,19 +1,14 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-import Api from './component/Api';
+import Api from './component/Apis';
 
 
 function App() {
   return (
-    <Router>
       <div className="App">
-      <Switch>
-      <Route path='/' exact component={Api}/>
-     {/*<Route path='/model' component={Model}/> */} 
-      </Switch>
+      <Api/>
       </div>
-    </Router>
+    
   );
 }
 
